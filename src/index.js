@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+// import Clock from './Clock';
+// import SampleJSX from './SampleJSX';
+// import MemberInfo from './member';
+// import App from './App';
+// import ClassComp from './ClassComp';
+// import Say from './Say';
+// import Event from './Event';
+// import EventInput from './InputEx';
+import Event2 from './Event2';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Event2/>
+    {/* <EventInput/> */}
+    {/* <Event/> */}
+    {/* <Clock/> */}
+    {/* <App/> */}
+    {/* <ClassComp/> */}
+    {/* <Say/> */}
+    {/* <MemberInfo/> */}
+    {/* <SampleJSX /> */}
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

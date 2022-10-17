@@ -1,0 +1,15 @@
+.textStyle{
+  background-color: #eee;
+  color: pink;
+  font-size: 2rem;
+}
+
+.titleName{
+  color: aliceblue;
+  background-color: pink;
+  font-size: 1.5rem;
+}
+
+.App{
+  text-align: center;
+}
