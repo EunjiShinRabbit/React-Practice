@@ -22,7 +22,7 @@ const NameCard = () =>{
       <div>
         <p>이름: {name}</p>
         <p>직책: {job}</p>
-        <p>회사명: {company}</p>
+        <p>회사명: {company}</p> 
         <p>회사주소: {addr}</p>
         <p>이메일: {email}</p>
         <p>전화번호: {phone}</p>

@@ -1,0 +1,58 @@
+// @import './styles/util.scss'; 이러것으로 공통된 부분을 빼놓고 import 해서 사용 가능
+
+// 이런식으로 미리 정의하는게 가능함!!
+$red: #fa5252;
+$orange: #fd7e14;
+$yellow: #fcc419;
+$green: #40c057;
+$blue: #339af0;
+$indigo: #5c7cfa;
+$violet: #7950f2;
+
+// 믹스인(재사용되는 스타일 블록을 함수처럼 사용할 수 있음)
+@mixin square($size){ // $ 붙은거는 변수처럼 사용 가능
+  $calculated: 32px * $size;
+  width: $calculated;
+  height: $calculated;
+}
+
+.ScssComponent{
+  display: flex;
+  .box{
+    background: red;
+		cursor:pointer; // 커서 올리면 손가락 모양으로 바뀌는거
+		transition: all 0.3s ease-in; // 전환효과(hover이나 active 등 했을때 바뀌는 효과)
+    &.red{ // &연산자 사용, .box이면서 .red인것 선택
+      background: $red;
+			@include square(1);
+		}
+		&.orange {
+			background: $orange;
+			@include square(2);
+		}
+		&.yellow {
+			background: $yellow;
+			@include square(3);
+		}
+		&.green {
+			background: $green;
+			@include square(4);
+		}
+		&.blue {
+			background: $blue;
+			@include square(5);
+		}
+		&.indigo {
+			background: $indigo;
+			@include square(6);
+		}
+    &.violet {
+			background: $violet;
+			@include square(7);
+		}
+		&:hover {
+			// .box에 마우스를 올렸을 때
+			background: black;
+		}
+  }
+}
