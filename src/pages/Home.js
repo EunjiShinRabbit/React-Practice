@@ -7,6 +7,7 @@ const Home = () => {
       <Link to="/about">소개</Link>
       <Link to="/setting">설정</Link>
       <Link to="/news">뉴스</Link>
+      <Link to="/news2">뉴스(카테고리별)</Link>
     </div>
   )
 }

@@ -16,18 +16,20 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Setting from './pages/Setting'
 import News from './pages/News';
+import News2 from './pages/News2';
 
 function App() {
   // const element = <WelcomeProp name="애오앵옹" jobs="개발자"/>
   return (
     <>
-      <h1>~라우터 연습중~</h1>
+      <h1>~라우터 연습!~</h1>
       <Router>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/setting' element={<Setting/>}/>
           <Route path='/news' element={<News/>}/>
+          <Route path='/news2' element={<News2/>}/>
         </Routes>
         {/* {element}
         <WelcomeProp name = "브라키오사우르스">초식공룡</WelcomeProp>
