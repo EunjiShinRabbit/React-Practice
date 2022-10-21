@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import writeIcon from "./logo192.png"
 const Home = () => {
   return (
     <div>
@@ -8,6 +9,11 @@ const Home = () => {
       <Link to="/setting">설정</Link>
       <Link to="/news">뉴스</Link>
       <Link to="/news2">뉴스(카테고리별)</Link>
+      <div className="writebox">
+        <input type="text" name="writename" className="writename" placeholder="글제목"/>
+        <textarea name="writecontent" className="writecontent" placeholder="글내용"></textarea>
+        <button>등록 <img src={writeIcon} alt="글쓰기아이콘"/></button>
+      </div>
     </div>
   )
 }
